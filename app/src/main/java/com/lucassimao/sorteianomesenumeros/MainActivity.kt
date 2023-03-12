@@ -18,5 +18,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnNames.setOnClickListener {
+            Intent(this, DrawNamesActivity::class.java).apply {
+                startActivity(this)
+            }
+        }
+
     }
 }

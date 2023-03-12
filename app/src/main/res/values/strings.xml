@@ -8,4 +8,7 @@
     <string name="final_number">Número final:</string>
     <string name="how_many_numbers_to_draw">Sortear quantos números?</string>
     <string name="raffle">Sortear</string>
+    <string name="add_nome">Adicionar nome</string>
+    <string name="to_add">Adicionar</string>
+    <string name="clear_list">Limpar lista</string>
 </resources>
