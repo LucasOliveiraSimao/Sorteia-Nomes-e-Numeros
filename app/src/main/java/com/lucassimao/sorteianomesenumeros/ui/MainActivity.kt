@@ -1,4 +1,4 @@
-package com.lucassimao.sorteianomesenumeros
+package com.lucassimao.sorteianomesenumeros.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -11,4 +11,8 @@
     <string name="add_nome">Adicionar nome</string>
     <string name="to_add">Adicionar</string>
     <string name="clear_list">Limpar lista</string>
+    <string name="initial_number_field_cannot_be_empty">Campo número inicial não pode ser vazio</string>
+    <string name="final_number_field_cannot_be_empty">Campo número final não pode ser vazio</string>
+    <string name="field_cannot_be_empty">Campo não pode ser vazio</string>
+    <string name="the_starting_number_is_greater_than_the_ending_number">O número inicial é maior que o número final</string>
 </resources>
