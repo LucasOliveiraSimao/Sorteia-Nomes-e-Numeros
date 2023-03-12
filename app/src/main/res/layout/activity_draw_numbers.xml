@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context=".DrawNumbersActivity">
+    tools:context=".ui.DrawNumbersActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -40,10 +40,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/initial_number"
-                app:layout_constraintBottom_toBottomOf="@+id/editText"
+                app:layout_constraintBottom_toBottomOf="@+id/et_initial_number"
                 app:layout_constraintEnd_toStartOf="@+id/guideline4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/editText" />
+                app:layout_constraintTop_toTopOf="@+id/et_initial_number" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -51,23 +51,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/final_number"
-                app:layout_constraintBottom_toBottomOf="@+id/editText2"
+                app:layout_constraintBottom_toBottomOf="@+id/et_final_number"
                 app:layout_constraintEnd_toStartOf="@+id/guideline4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/editText2" />
+                app:layout_constraintTop_toTopOf="@+id/et_final_number" />
 
             <TextView
                 style="@style/TextViewDefault"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/how_many_numbers_to_draw"
-                app:layout_constraintBottom_toBottomOf="@+id/editText3"
+                app:layout_constraintBottom_toBottomOf="@+id/et_how_many_numbers"
                 app:layout_constraintEnd_toStartOf="@+id/guideline4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/editText3" />
+                app:layout_constraintTop_toTopOf="@+id/et_how_many_numbers" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/et_initial_number"
                 style="@style/EditTextDefault"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -77,25 +77,26 @@
                 tools:ignore="Autofill,LabelFor" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/et_final_number"
                 style="@style/EditTextDefault"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline4"
-                app:layout_constraintTop_toBottomOf="@+id/editText"
+                app:layout_constraintTop_toBottomOf="@+id/et_initial_number"
                 tools:ignore="Autofill,LabelFor" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/et_how_many_numbers"
                 style="@style/EditTextDefault"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:maxLength="2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline4"
-                app:layout_constraintTop_toBottomOf="@+id/editText2"
+                app:layout_constraintTop_toBottomOf="@+id/et_final_number"
                 tools:ignore="Autofill,LabelFor" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -103,6 +104,7 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_raffle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -110,5 +112,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        style="@style/TextViewDefault"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_raffle"
+        tools:text="[2,1]" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
